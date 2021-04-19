@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+
+    <ImageView
+        android:id="@+id/image_view_recipe"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_image" />
+
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_view_recipe"
+        android:layout_toStartOf="@+id/text_view_count"
+        android:layout_toEndOf="@+id/image_view_recipe"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/blackEmphasis"
+        android:textSize="16sp"
+        tools:text="Tangerine Salad" />
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_name"
+        android:layout_toStartOf="@+id/text_view_count"
+        android:layout_toEndOf="@id/image_view_recipe"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        tools:text="Peak tangerine season lasts from autumn to spring." />
+
+    <TextView
+        android:id="@+id/text_view_count"
+        android:visibility="gone"
+        android:includeFontPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_view_recipe"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp"
+        tools:text="01" />
+
+</RelativeLayout>
